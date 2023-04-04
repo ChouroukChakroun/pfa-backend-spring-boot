@@ -1,15 +1,31 @@
 package com.PFA.doc_Tunisia.model;
 
-public class Doctor {
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-    private Long id;
+import java.util.List;
 
-    private String firstName;
 
-    private String lastName;
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+public class Doctor extends Person {
+
+    private String speciality;
 
     private float priceConsultation;
 
-    private String address;
+    private String doctor_office;
+
+
+
+
 
 }
